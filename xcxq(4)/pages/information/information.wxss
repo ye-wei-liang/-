@@ -1,0 +1,65 @@
+/* pages/information/information.wxss */
+page {
+  height: 100%;
+}
+.my-userinfo-container {
+  height: 100%;
+  background-color: #f4f4f4;
+}
+.top-box {
+  display: flex;
+  height: 400rpx;
+  justify-content: center;
+  align-items: center;
+  background-color: #C00000;
+  flex-direction: column;
+}
+.avatar {
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 145rpx;
+  border: 2rpx solid #FFF;
+  box-shadow: 0 2rpx 6rpx black;
+}
+.nickname {
+  font-size: 46rpx;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 5rpx;
+}
+form {
+  display: block;
+  /* width: 600rpx; */
+  /* height: 700rpx; */
+}
+.panel-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  margin: 0 70rpx;
+  top: -30rpx;
+  width: 600rpx;
+  height: 700rpx;
+  background-color: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 20rpx;
+}
+
+.panel-list view {
+  display: flex;
+  /* height: 110rpx; */
+  border-bottom: 1rpx dotted #333
+}
+.number {
+  margin-top: 10rpx;
+}
+.submit {
+  width: 650rpx;
+  background-color: aqua;
+}
+.exit {
+  margin-top: 20rpx;
+  width: 650rpx;
+  background-color: rgb(253, 93, 88);
+}

@@ -1,0 +1,45 @@
+.hd_scan {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle; 
+  justify-content: space-between; 
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+@keyframes myfirst {
+from {
+  height:0rpx;
+}
+to {
+  height:210rpx;
+}
+}
+.list-msg {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #333;
+  background-color: azure;
+}
+.list-msg1 {
+  color: aqua;
+ font-size: large;
+}
+.list-msg2 {
+  color: aqua;
+  font-size: large;
+}
+.select_box {
+  position: fixed;
+  top: 50rpx;
+  left: 520rpx;
+  width: 100rpx;
+  background-color: #FFF;
+  z-index: 10000;
+}
+.preview {
+  background-color: rgb(235, 243, 225)
+}

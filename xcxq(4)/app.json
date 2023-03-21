@@ -1,0 +1,44 @@
+{
+  "pages": [
+    
+    "pages/asset/asset",
+    "pages/information/information",
+    "pages/identification/identification",    
+     "pages/login/login"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#576b95",
+    "navigationBarTitleText": "资产盘点",
+    "navigationBarTextStyle": "white"
+  },
+  
+    "permission": {
+      "scope.userLocation": {
+        "desc": "获取您的位置信息将用于小程序定位"
+      },
+      "scope.camera": {
+        "desc": "用于拍摄照片"
+      },
+      "scope.album": {
+        "desc": "用于选择照片"
+      }
+    },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath":  "pages/asset/asset",
+        "text": "资产盘点",
+        "iconPath": "./pages/images/wallet.png",
+        "selectedIconPath": "./pages/images/wallet-active.png"
+      },
+      {
+        "pagePath":  "pages/information/information",
+        "text": "个人信息",
+        "iconPath": "./pages/images/user.png",
+        "selectedIconPath": "./pages/images/user-active.png"
+      }
+    ]
+  }
+}

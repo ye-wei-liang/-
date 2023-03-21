@@ -1,0 +1,13 @@
+<!--pages/asset/asset.wxml-->
+<!-- 轮播图区域 -->
+<swiper indicator-dots circular autoplay="true" interval="3000">
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.image}}" mode=""></image>
+  </swiper-item>
+</swiper>
+<view>
+  <button class="assetbutton" bindtap="gotoAssetCheck">资产盘点</button>
+</view>
+<view>
+  <button class="locationbutton" bindtap="">定位打卡</button>
+</view>
