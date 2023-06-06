@@ -1,17 +1,17 @@
 ## 🐶 新手必读
 
 小程序使用流程：
-1. 打开微信，在小程序搜索框中输入 珍溯 
+1. 打开微信，在小程序搜索框中输入 **珍溯** 
 2. 进入小程序即可操作。
 
 ## 🐯 平台简介
 
 珍溯，这是一个资产盘点小程序。"珍"指代珍贵、宝贵之物，"溯"表示追溯、回顾之意。因此，"珍溯"可以理解为在资产盘点过程中，回顾和寻找那些珍贵的物品或信息。
-😜 给项目点点 Star 吧，这对我们很重要！💪💪💪
+> 😜 给项目点点 Star 吧，这对我们很重要！💪💪💪
 
 ## 🐳 项目源码和技术栈
 
-源码：GitHub
+源码：GitHub <br/>
 技术栈：
 1. 微信小程序开发语言
 2. Spring Boot
@@ -23,7 +23,14 @@
 
 ## 🐷 小程序演示图
 目前已经实现登录、资产盘点、定位打卡、导出资产盘点结果报表等功能。
-		
+
+| biu                                                              | biu                                                                    | biu                                                                    |
+|------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
+| ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/01.png?imageView2/2/format/webp) | ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/02.png?imageView2/2/format/webp) | ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/03.png?imageView2/2/format/webp) |
+| ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/04.png?imageView2/2/format/webp) | ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/05.png?imageView2/2/format/webp) | ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/06.png?imageView2/2/format/webp) |
+| ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/07.png?imageView2/2/format/webp) | ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/08.png?imageView2/2/format/webp) | ![](https://static.iocoder.cn/images/ruoyi-vue-pro/admin-uniapp/09.png?imageView2/2/format/webp) |
+
+
 		
 		
 
