@@ -25,7 +25,7 @@
 目前已经实现登录、资产盘点、定位打卡、导出资产盘点结果报表等功能。
 
 
-| 列1      | 列2      | 列3      |
+| biu      | biu      | biu      |
 |:---------------------------------------:|:---------------------------------------:|:---------------------------------------:|
 | ![](https://github.com/ye-wei-liang/-/blob/main/img/1.jpg)    | ![](https://github.com/ye-wei-liang/-/blob/main/img/2.jpg)    | ![](https://github.com/ye-wei-liang/-/blob/main/img/3.jpg)   |
 |  ![](https://github.com/ye-wei-liang/-/blob/main/img/4.jpg)   | ![](https://github.com/ye-wei-liang/-/blob/main/img/5.jpg)   | ![](https://github.com/ye-wei-liang/-/blob/main/img/6.jpg)    |
