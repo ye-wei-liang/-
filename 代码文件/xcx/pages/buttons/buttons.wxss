@@ -1,0 +1,26 @@
+/* pages/buttons/buttons.wxss */
+page {
+  background-image: url('https://wimg.588ku.com/gif620/22/05/01/9c598a9e1c9df49712c2e5a9bdaf2569.gif');
+  background-position: center;
+}
+.button {
+  margin-top: 40rpx;
+  background: linear-gradient(rgb(234, 128, 238), rgba(113, 226, 164, 0.671)); 
+  width: 200rpx;  
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.button1 {
+  margin-top: 40rpx;
+  background: linear-gradient(rgb(71, 248, 210), rgba(233, 235, 99, 0.637)); 
+  width: 200rpx;  
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.rowButton {
+  display: flex;
+  justify-content: space-around
+}
+ 
+
+

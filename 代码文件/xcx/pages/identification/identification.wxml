@@ -1,0 +1,88 @@
+<!--identification.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+<!-- 地图按钮 -->
+<view>
+  <button class="preview" bindtap="preview">实验室地图</button>
+</view>
+<!-- 识别工位与资产编号 -->
+  <view class="page__hd">
+
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{topTips}}</view>
+   
+    <!-- 工位识别 -->
+    <view class='hd_scan' bindtap='scancode2'>
+      <view>
+        <view class="page__title">工位识别</view>
+        <view class="page__desc">点击扫描工位编号</view>
+      </view>
+      <image style='width:60px; height:60px; padding-left: 55px; ' src='../images/scan3.png'>
+      </image>
+      <image style='width:30px; height:30px ' src='../images/right.png'>
+      </image>
+
+    </view>
+     <!-- 资产识别 -->
+     <view class='hd_scan' bindtap='tips'>
+      <view>
+        <view class="page__title">资产识别</view>
+        <view class="page__desc">点击扫描显示器和主机编号</view>
+      </view>
+      <image style='width:60px; height:60px' src='../images/scan3.png'>
+      </image>
+      <image style='width:30px; height:30px' src='../images/right.png'>
+      </image>
+
+    </view>
+  </view>
+<!-- 记录信息 -->
+<form bindsubmit="formSubmit" >
+  <view class="page__bd">
+    <view class="weui-cells__title">工位号</view>
+    <view class="weui-cells weui-cells_after-title box">
+      <view class="weui-cell weui-cell_input ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">工位编号</view>
+        </view>
+        <view class="weui-cell__bd ">
+          <input id="inputBox" class="weui-input" name="stationCode" bindinput='bindDeviceCodeInput' value="{{stationCode}}"  />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">设备属性</view>
+    <view class="weui-cells weui-cells_after-title box">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">显示器编号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input"  name="screenCode" bindinput='bindDeviceCodeInput' value="{{screenCode}}"  />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">主机编号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="hostCode" bindinput='bindDeviceCodeInput' value="{{hostCode}}"  />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">备注</view>
+    <view class="weui-cells weui-cells_after-title box">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" bindblur="changeContext" value="{{textValue}}"/>
+          <view class="weui-textarea-counter">0/200</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-btn-area">
+      <button class="confirm " type="primary" formType="submit">确定</button>
+    </view>
+  </view>
+</form>
+</view>

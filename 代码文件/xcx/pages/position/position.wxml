@@ -1,0 +1,55 @@
+<!--pages/position/position.wxml-->
+
+<view class="index">
+  <!-- 用户信息 -->
+  <view class="head ">
+    <view class="head_box" >
+      <view class="user_ava">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view>
+        <view class="user_name">{{username}}<text>{{tip}}</text></view>
+        <view class="user_add">新的一天开始了，加油哦~</view>
+      </view>
+    </view>
+  </view>
+ 
+  <view class="contentBox">
+    <!-- 打卡记录 -->
+    <view class="signRecord">
+      <view class="signInfo">进入实验室
+        <text class="text-green">{{record[0].times ? record[0].times : '未打卡'}}</text>
+        <view class="sign_address">
+          <view class="">{{record[0].address ? record[0].address : '暂无打卡地址'}}</view>
+        </view>
+      </view>
+      <view class="signInfo">离开实验室
+        <text class="text-green">{{record[1].times ? record[1].times : '未打卡'}}</text>
+        <view class="sign_address">
+          <view class="">{{record[1].address ? record[1].address : '暂无打卡地址'}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="dateInfo ">
+      <text>{{nowDate}} {{nowDay}}</text>
+    </view>
+    <!-- 打卡按钮 -->
+    <view class="c_clock flex-column">
+      <view class="clock_time flex-column j_c {{status==1?'c1':'c2'}} {{is_out==2 ? 'outArea' : ''}}" catchtap="signTap">
+        <text>{{signType>0 ? "离开实验室打卡" : "进入实验室打卡"}}</text>
+        <text>{{now_time}}</text>
+      </view>
+      <view class="clock_time_over flex-column j_c  {{status==1?'c2':'c1'}}" catchtap="clockInStart">
+        <text>已打卡</text>
+        <text>{{now_time_stop}}</text>
+      </view>
+    </view>
+    <!-- 打卡地址 -->
+    <view class="clock_address ">
+      <image src="../images/position.png" class="add_icon" />
+      <text>{{current_address}}</text>
+    </view>
+    <view class="refresh" catchtap="refreshAdd">刷新位置
+    </view>
+  </view>
+</view>

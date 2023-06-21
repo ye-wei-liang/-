@@ -1,0 +1,69 @@
+<!--pages/information/information.wxml-->
+<view class="my-userinfo-container">
+<!-- 头像昵称区域 -->
+<view class="top-box">
+  <image src="{{imagesrc}}" class="avatar"mode=""/>
+  <view class="nickname">
+    {{username}}
+  </view>
+  <image src='https://codermoyv.gitee.io/coder-moyv/assets/images/wechat/bg_wave.gif' mode='scaleToFill' class='gif-wave'></image>
+</view>
+<!-- 面板区域 -->
+<form bindsubmit="formSubmit" class="list">
+<view id="studentIfo" class="panel-list" wx:if="{{true}}" >
+
+<view class="number">
+  <text>学号:</text>
+  <input type="text" name="student_number" value="{{student_number}}"></input>
+</view>
+<view>
+  <text>姓名:</text>
+  <input type="text" name="student_name" value="{{student_name}}" ></input>
+</view>
+<view class="box1">
+  <text>显示器资产编号:</text>
+  <input type="text" name="screen_code" value="{{screen_code}}" ></input>
+  <image class="screenImage" bindtap="scancode"  data-code="screen_code" style='width:45px; height:45px' src='../images/scan3.png'>
+  </image>
+</view>
+<view class="box2">
+  <text>主机资产编号:</text>
+  <input type="text" name="host_code" value="{{host_code}}" ></input>
+  <image class="screenImage" bindtap="scancode" data-code="host_code"style='width:45px; height:45px' src='../images/scan3.png'>
+  </image>
+</view>
+<view class="box3">
+  <text>工位号:</text>
+  <input type="text" name="station_number" value="{{station_number}}"></input>
+  <image class="screenImage" bindtap="scancode" data-code="station_number"style='width:45px; height:45px' src='../images/scan3.png'>
+  </image>
+</view>
+<view>
+  <text>联系电话:</text>
+  <input type="number" name="tel_number" value="{{tel_number}}"></input>
+</view>
+
+</view>
+<view id="teacherIfo" class="panel-list" wx:if="{{identityT}}" >
+
+<view class="number">
+  <text>教师编号:</text>
+  <input type="text" name="teacher_number" value="{{teacher_number}}"></input>
+</view>
+<view>
+  <text>教师姓名:</text>
+  <input type="text" name="teacher_name" value="{{teacher_name}}" ></input>
+</view>
+
+<view>
+  <text>联系电话:</text>
+  <input type="number" name="tel_number" value="{{tel_number}}"></input>
+</view>
+
+</view>
+<view>
+  <button class="submit" formType="submit">提交</button>
+</view>
+</form> 
+  <button class="exit" bindtap="exit" >退出登录</button>
+</view>

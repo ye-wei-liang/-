@@ -1,0 +1,392 @@
+ 
+page {
+  height: calc(100% - 10px);
+
+}
+ 
+.index {
+  /* margin-top: 10px; */
+  /* background: #fff; */
+  min-height: 100%;
+  background-image: url('https://wimg.588ku.com/gif620/21/04/22/251887404cdfd5f45778c4a617634957.gif');
+  background-position: center;
+  background-size: 700px 700px;
+
+}
+ 
+.head {
+  padding-bottom: 10rpx;
+  border-bottom: 2rpx solid #E5E5E5;
+}
+ 
+.head_box {
+  padding: 26rpx 28rpx 8px;
+  display: flex;
+  width: 750rpx;
+  box-sizing: border-box;
+}
+ 
+.user_ava {
+  width: 116rpx;
+  height: 116rpx;
+  overflow: hidden;
+  border-radius: 25%;
+  margin-right: 32rpx;
+}
+ 
+.user_name {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 18rpx;
+}
+ 
+.user_name text {
+  font-size: 24rpx;
+  color: #999999;
+  font-weight: 400;
+  margin-left: 40rpx;
+}
+ 
+.user_add {
+  font-size: 28rpx;
+  color: #3380F3;
+}
+ 
+.contentBox {
+  padding: 44rpx 28rpx;
+}
+ 
+.signRecord{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 15px;
+
+}
+ 
+.dateInfo{
+  text-align: center;
+  position: relative;
+  top: 50px;
+  font-size: 35rpx;
+}
+ 
+.c_title {
+  font-size: 28rpx;
+  color: #666666;
+  margin-bottom: 26rpx;
+}
+ 
+ 
+.c_section .c_item {
+  position: relative;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #333333;
+  padding-left: 40rpx;
+  margin-bottom: 110rpx;
+}
+ 
+.c_section text {
+  color: #307CED;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 80%;
+  white-space: nowrap;
+}
+ 
+.c_section .c_item::before {
+  content: '';
+  position: absolute;
+  width: 18rpx;
+  height: 18rpx;
+  border: 2rpx solid #999999;
+  left: 0;
+  top: 50%;
+  margin-top: -9rpx;
+  border-radius: 50%;
+}
+ 
+.c_section {
+  position: relative;
+}
+ 
+.c_section .c_item::after {
+  content: '';
+  position: absolute;
+  width: 2rpx;
+  height: 178rpx;
+  background: #E6E6E6;
+  left: 10rpx;
+  top: 34rpx;
+}
+ 
+.c_section view:last-child::after {
+  display: none;
+}
+ 
+.start_lo {
+  position: absolute;
+  top: 30px;
+  left: -5px;
+}
+ 
+.start_end {
+  position: absolute;
+  bottom: -108px;
+  left: 20px;
+}
+ 
+.c_clock {
+  margin: 180rpx auto 0;
+  width: 350rpx;
+  height: 380rpx;
+  perspective: 1500;
+  -webkit-perspective: 1500;
+  -moz-perspective: 1500;
+}
+ 
+.clock_time {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 350rpx;
+  height: 350rpx;
+  margin-bottom: 30rpx;
+  position: absolute;
+  transition: all 1s;
+  backface-visibility: hidden;
+}
+ 
+.clock_time::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  background: rgba(48, 124, 237, 0.08);
+  animation: scale 1s infinite alternate-reverse;
+}
+ 
+/* 已打卡 */
+.clock_time_over {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 350rpx;
+  height: 350rpx;
+  margin-bottom: 30rpx;
+  border-radius: 50%;
+  background: rgba(48, 124, 237, 0.08);
+  position: absolute;
+  transition: all 1s;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+ 
+.clock_time_over::after {
+  position: absolute;
+  z-index: 11;
+  content: '';
+  width: 320rpx;
+  height: 320rpx;
+  background: #C6CED9;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+ 
+ 
+.clock_time_over text {
+  position: relative;
+  z-index: 13;
+  color: #FFFFFF;
+}
+ 
+.clock_time_over text:first-child {
+  font-size: 36rpx;
+  margin-bottom: 14rpx;
+}
+ 
+.clock_time_over text:last-child {
+  font-size: 28rpx;
+}
+ 
+@keyframes scale {
+ 
+  0% {
+    transform: scale(1.1);
+  }
+ 
+  100% {
+    transform: scale(1);
+  }
+}
+ 
+.clock_time::before {
+  position: absolute;
+  z-index: 11;
+  content: '';
+  width: 320rpx;
+  height: 320rpx;
+  background: rgb(48, 124, 237, 0.79);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.clock_time text {
+  position: relative;
+  z-index: 13;
+  color: #FFFFFF;
+}
+ 
+.clock_time text:first-child {
+  font-size: 36rpx;
+  margin-bottom: 14rpx;
+}
+ 
+.clock_time text:last-child {
+  font-size: 45rpx;
+}
+ 
+.clock_address {
+  text-align: center;
+  font-size: 30rpx;
+  color: #333333;
+  width: 80%;
+  margin: 20px auto;
+  overflow:hidden;  
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+ 
+.clock_address text {
+  vertical-align: middle;
+}
+ 
+.add_icon {
+  width: 28rpx;
+  height: 36rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+ 
+.refresh {
+  margin-top: 25px;
+  color: #307CED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+ 
+ 
+.now_location {
+  font-size: 24rpx;
+  color: #333333 !important;
+}
+ 
+.upload_box {
+  width: 260rpx;
+  height: 180rpx;
+  background: #F5F5F8;
+  border-radius: 5rpx;
+}
+ 
+.upload_box text {
+  font-size: 20rpx;
+  color: #999 !important;
+  font-weight: 100;
+}
+ 
+.camera_icon {
+  width: 42rpx;
+  height: 44rpx;
+  margin-bottom: 10rpx;
+}
+ 
+.clock_img {
+  width: 100%;
+  height: 100%;
+}
+ 
+.del_icon {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: -4px;
+  top: -11rpx;
+}
+ 
+.ative::before {
+  background: #307cedc9;
+  border: 2rpx solid #307cedc9 !important;
+}
+ 
+.c1 {
+  transform: rotateY(180deg)
+}
+ 
+.c1::after {
+  animation: none !important;
+}
+ 
+.c2 {
+  transform: rotateY(0deg)
+}
+ 
+.mealBtn{
+  position: absolute;
+  right: 15px;
+}
+.mealBtn image{
+  width: 27px;
+  height: 27px;
+}
+.mealText{
+ font-size: 12px;
+ color: #999999;
+}
+ 
+.outArea::before{
+  background: #f44336 !important;
+}
+.signInfo{
+  width: 150px;
+  height: 65px;
+
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #a0bcf7 0%, #f5ffbf  51%, #6effc7  100%);
+}
+.signInfo text{
+  float: inline-end;
+}
+.sign_address{
+  display: flex;
+  margin-top: 5px;
+}
+ 
+ 
+.sign_address view{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  margin-top: 1px !important;
+  color: #5f5a5a;
+}
+ 
+.text-green{
+  color: green;
+}

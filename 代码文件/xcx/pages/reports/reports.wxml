@@ -1,0 +1,30 @@
+<!--pages/reports/reports.wxml-->
+
+<picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime1" range="{{dateTimeArray}}">
+    <view class="box">
+      <view class="selectDate tui-picker-detail">
+      {{estimate_in_time ? estimate_in_time : '请选择报表的盘查开始时间'}}
+    </view>
+    <view class="caleander">
+      <image class="caleander" src="../images/caleander.png" ></image>
+    </view>
+    </view>
+  </picker>
+
+
+  <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime2" range="{{dateTimeArray1}}">
+    <view class="box">
+      <view class="selectDate tui-picker-detail">
+      {{estimate_in_time1 ? estimate_in_time1 : '请选择报表的盘查结束时间'}}
+    </view>
+    <view class="caleander">
+      <image class="caleander" src="../images/caleander.png" ></image>
+    </view>
+    </view>
+  </picker>
+  <view class="cell-list-wrap">
+    <view class="cell-list-file" wx:for="{{lists}}" wx:key="index">
+      <text class="title">{{item.name}}</text>
+      <text class="down topZindex" bindtap="onDown" data-fileurl="{{item.fileUrl}}">下载</text>
+    </view> 
+</view>

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/asset/asset",
+    "pages/information/information",
+    "pages/identification/identification",    
+    "pages/position/position",
+    "pages/buttons/buttons",
+    "pages/reports/reports"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#576b95",
+    "navigationBarTitleText": "火花",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath":  "pages/asset/asset",
+        "text": "资产盘点",
+        "iconPath": "./pages/images/wallet.png",
+        "selectedIconPath": "./pages/images/wallet-active.png"
+      },
+      {
+        "pagePath":  "pages/information/information",
+        "text": "个人信息",
+        "iconPath": "./pages/images/user.png",
+        "selectedIconPath": "./pages/images/user-active.png"
+      }
+    ]
+  },
+  "permission": {
+		"scope.userLocation": {
+			"desc": "您的位置信息将用于小程序考勤签到功能"
+		}
+	},
+	"requiredPrivateInfos":[
+		"getLocation"
+	],
+
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

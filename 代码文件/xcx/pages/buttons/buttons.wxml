@@ -1,0 +1,43 @@
+<!--pages/buttons/buttons.wxml-->
+
+<!-- <form bindsubmit="formSubmit" class="list"> -->
+<view class="rowButton">
+  <view>
+    <input type="text" id="BS-421-0" class='{{buttonStyle[0]}}' disabled="true" name="BS-421" value="{{'     BS-421'}}" bindtap="click" />
+</view>
+<view>
+    <input type="text" id="BS-422-1" class='{{buttonStyle[1]}}' disabled="true" name="BS-422" value="{{'     BS-422'}}" bindtap="click" />
+</view>
+<view>
+    <input type="text" id="BS-423-2" class='{{buttonStyle[2]}}' disabled="true" name="student_number" value="{{'     BS-423'}}" bindtap="click"/>
+</view>
+</view>
+
+<view class="rowButton">
+  <view>
+    <input type="text" id="BS-424-3" class='{{buttonStyle[3]}}' disabled="true" name="student_number" value="{{'     BS-424'}}" bindtap="click"/>
+</view>
+<view>
+    <input type="text" id="BS-425-4" class='{{buttonStyle[4]}}' disabled="true" name="student_number" value="{{'     BS-425'}}" bindtap="click"/>
+</view>
+<view>
+    <input type="text" id="BS-426-5" class='{{buttonStyle[5]}}' disabled="true" name="student_number" value="{{'     BS-426'}}" bindtap="click"/>
+</view>
+</view>
+
+<view class="rowButton">
+  <view>
+    <input type="text" id="BS-427-6" class='{{buttonStyle[6]}}' disabled="true" name="student_number" value="{{'     BS-427'}}" bindtap="click"/>
+</view>
+<view>
+    <input type="text" id="BS-428-7" class='{{buttonStyle[7]}}' disabled="true" name="student_number" value="{{'     BS-428'}}" bindtap="click"/>
+</view>
+<view>
+    <input type="text" id="BS-429-8" class='{{buttonStyle[8]}}' disabled="true" name="student_number" value="{{'     BS-429'}}" bindtap="click"/>
+</view>
+</view>
+
+<!-- <view>
+  <button class="submit" formType="submit">提交</button>
+</view> -->
+<!-- </form> -->

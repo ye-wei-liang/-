@@ -1,0 +1,24 @@
+<!--pages/asset/asset.wxml-->
+<!-- 轮播图区域 -->
+<swiper indicator-dots circular autoplay="true" interval="3000">
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.image}}" mode=""></image>
+  </swiper-item>
+</swiper>
+<view>
+  <button class="assetbutton btn blue" bindtap="gotoAssetCheck"  wx:if="{{1}}"><text>资产盘点</text></button>
+</view>
+<view>
+  <button class="locationbutton btn blue" bindtap="gotoPosition" wx:if="{{1}}"><text>定位打卡</text></button>
+</view>
+<view>
+  <button class="locationbutton btn blue" bindtap="gotoButtons" 
+  wx:if="{{1}}"><text>实验室选择</text></button>
+</view>
+
+<view>
+  <button class="locationbutton btn blue" bindtap="gotoReports"
+  wx:if="{{1}}"><text>结果报表</text></button>
+</view>
+
+

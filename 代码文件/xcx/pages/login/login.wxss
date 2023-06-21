@@ -1,0 +1,55 @@
+/* pages/login/login.wxss */
+
+page {
+  height: 100%;
+ 
+}
+.my-userinfo-container {
+  height: 100%;
+  background-image: url('https://inews.gtimg.com/newsapp_bt/0/12764196481/1000.jpg');
+  background-position: center;
+}
+.top-box {
+  display: flex;
+  height: 400rpx;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #75eb92, #8edee2);
+  flex-direction: column;
+}
+.avatar {
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 145rpx;
+  border: 2rpx solid #FFF;
+  box-shadow: 0 2rpx 6rpx black;
+}
+.nickname {
+  font-size: 46rpx;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 5rpx;
+}
+
+.login  {
+  width: 650rpx;
+  color: #173bdd;
+  margin-top: 50rpx;
+  background-image: linear-gradient(to right, #73e3f1 0%, #9bdfbf  51%, #8deca5  100%);
+  transition: 0.5s;
+  box-shadow: 0 0 20px rgb(196, 140, 231);
+}
+.login:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgb(223, 98, 48);
+  text-decoration: none;
+}
+.phoneNumber {
+  margin-top: 200rpx;
+  margin-left: 75rpx;
+  width: 600rpx;
+  height: 70rpx;
+  background-color: #cdf8bc;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(236, 213, 139);
+}

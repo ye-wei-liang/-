@@ -1,0 +1,29 @@
+/* pages/reports/reports.wxss */
+page {
+  background-image: url('https://wimg.588ku.com/gif620/21/03/06/768ec4473ae7ca112b60d00ff4b06ef5.gif');
+  background-position: center;
+  background-size: 700px 600px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 500rpx;
+  height: 110rpx;
+  margin: 0 auto auto;
+  
+}
+.selectDate {
+  width: 420rpx;
+  height: 103rpx;
+  /* margin-left: 70rpx; */
+  border: 1px solid #333;
+  line-height: 103rpx;
+  border-radius: 30rpx 0 0 30rpx ;
+}
+.caleander {
+  width: 100rpx;
+  height: 100rpx;
+  border: 1px solid #333;
+  border-left: none;
+  border-radius: 0 20rpx 20rpx 0 ;
+}
