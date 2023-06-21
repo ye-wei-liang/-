@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    #MySQL配置
+    driverClassName:  com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/assetmanagement?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+  mvc:
+    static-path-pattern: /**
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.xs.laboratory.entity
+server:
+  port: 9000
+
+wx:
+  miniapp:
+    appid: wx9324282e82b73d24
+    appsecret: ae7475929c174c50dc528fe20bd7e11e
+
